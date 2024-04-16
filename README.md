@@ -60,20 +60,54 @@
    
     可进行数据监控，查询CPU、内存等信息。查询管理员操作日志信息。
 
+## 技术介绍
+
+#### 校园实时监控
+
+1. 实时播放rtsp监控视频流
+    将RTSP视频流转码成WebRTC支持的视频格式，在浏览器中播放监控视频。
+
+2. 动态布局监控分屏
+   实现单屏、四分屏、九分屏、十六分屏等布局动态切换，支持点击切换布局、拖拽调整画面大小等操作。
+
+3. 树形组件展示摄像头区域分布
+   设置node-key，通过 key 来获取和设置选中节点
+
+#### 告警点位参数配置
+1. 配置项动态展示
+    配置开关打开后， 页面才会展示具体的配置内容， 实现了对配置项显示的动态控制。
+
+2. 树形组件的应用
+    提供了清晰的层级结构，展示摄像头位置与区域的关系。
+
+3. canvas框选检测区域
+    使用 Canvas 技术绘制多边形，实现告警检测参数的框选配置功能。检测区域的坐标数据以 JSON 格式传递给后端，以供后续检测使用。
+
+
+#### 告警测试流程
+
+1. 输入RTSP 测试视频流，返回监控视频的图片。
+2. 告警检测参数配置，包括配置告警区域，使用 Canvas 绘制区域，并将点位信息传给后端。
+3. 点击按钮开始告警检测。
+4. 检测完毕，前端展示告警结果列表和告警详情面板，包括告警时间、区域、类型等。
 
 
 
 ## 演示图
 
-
-
 <table>
     <tr>
-        <td>登录总览</td>
+        <td>登录</td>
         <td>
             <img src="img/1.png"/>
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;登录界面</div>
         </td>
+    <tr>
+</table>
+
+<table>
+    <tr>
+        <td>平台总览</td>
         <td>
             <img src="img/2.png"/>
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;平台总览</div>
@@ -83,12 +117,22 @@
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学校总览</div>
         </td>
     </tr>
+</table>
+
+<table>
     <tr>
         <td>基础信息</td>
         <td>
             <img src="img/4.png"/>
-            <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人员信息</div>
+            <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学生信息</div>
         </td>
+        <td>
+            <img src="img/5.png"/>
+            <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;教职工信息</div>
+        </td>
+    </tr>
+     <tr>
+        <td>基础信息</td>
         <td>
             <img src="img/6.png"/>
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;设备信息</div>
@@ -98,12 +142,19 @@
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;车辆信息</div>
         </td>
     </tr>
+
+</table>
+
+<table>
     <tr>
         <td>校园监控</td>
         <td>
             <img src="img/8.png"/>
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;实时监控</div>
         </td>
+    </tr>
+        <tr>
+        <td>校园监控</td>
         <td>
             <img src="img/9.png"/>
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录像列表</div>
@@ -113,6 +164,11 @@
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录像回放</div>
         </td>
     </tr>
+
+</table>
+
+
+<table>
     <tr>
         <td>告警事件</td>
         <td>
@@ -123,10 +179,6 @@
             <img src="img/12.png"/>
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;详情面板</div>
         </td>
-        <td>
-            <img src="img/17.png"/>
-            <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据分析</div>
-        </td>
     </tr>
      <tr>
         <td>告警配置</td>
@@ -135,6 +187,13 @@
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;配置列表</div>
         </td>
         <td>
+            <img src="img/14.png"/>
+            <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基础配置</div>
+        </td>
+    </tr>
+    <tr>
+        <td>告警配置</td>
+         <td>
             <img src="img/15.png"/>
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;检测配置</div>
         </td>
@@ -154,6 +213,19 @@
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测试结果</div>
         </td>
     </tr>
+    <tr>
+        <td>告警分析</td>
+        <td>
+            <img src="img/17.png"/>
+            <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数据分析</div>
+        </td>
+    </tr>
+    
+</table>
+
+
+
+<table>
     <tr>
         <td>安防任务</td>
         <td>
@@ -187,7 +259,6 @@
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;角色权限</div>
         </td>
     </tr>
-    
 </table>
 
 
