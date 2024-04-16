@@ -237,7 +237,7 @@
         git clone https://github.com/QJC1123/tuan-admin-ui
 
         # 进入项目目录
-        cd tuan-wx-ui
+        cd tuan-admin-ui
 
         # 安装依赖
         npm install
