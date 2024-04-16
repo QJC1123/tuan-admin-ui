@@ -18,7 +18,7 @@
 * 前端组件采用[element-ui](https://www.uihtm.com/element/#/zh-CN)，全端兼容的高性能UI框架。
 * [Echarts](https://echarts.apache.org/zh/index.html)展示多种多种图表。
 * 实现浏览器播放Rtsp监控视频流
-
+* 使用Canvas技术，绘制多边形并返回点位坐标信息，实现告警检测区域框选功能。
 
 
 ## 功能模块
