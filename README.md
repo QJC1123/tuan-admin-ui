@@ -100,14 +100,13 @@
         <td>登录</td>
         <td>
             <img src="img/1.png"/>
-            <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;登录界面</div>
         </td>
     <tr>
 </table>
 
 <table>
     <tr>
-        <td>平台总览</td>
+        <td>数据总览</td>
         <td>
             <img src="img/2.png"/>
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;平台总览</div>
@@ -153,7 +152,10 @@
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;实时监控</div>
         </td>
     </tr>
-        <tr>
+</table>
+
+<table>
+    <tr>
         <td>校园监控</td>
         <td>
             <img src="img/9.png"/>
@@ -164,7 +166,6 @@
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录像回放</div>
         </td>
     </tr>
-
 </table>
 
 
