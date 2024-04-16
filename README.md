@@ -95,17 +95,15 @@
 
 ## 演示图
 
+
 <table>
     <tr>
-        <td>登录</td>
+        <td>登录界面</td>
         <td>
             <img src="img/1.png"/>
         </td>
     <tr>
-</table>
-
-<table>
-    <tr>
+     <tr>
         <td>数据总览</td>
         <td>
             <img src="img/2.png"/>
@@ -116,9 +114,6 @@
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学校总览</div>
         </td>
     </tr>
-</table>
-
-<table>
     <tr>
         <td>基础信息</td>
         <td>
@@ -141,36 +136,17 @@
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;车辆信息</div>
         </td>
     </tr>
-
-</table>
-
-<table>
     <tr>
         <td>校园监控</td>
         <td>
             <img src="img/8.png"/>
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;实时监控</div>
         </td>
-    </tr>
-</table>
-
-<table>
-    <tr>
-        <td>校园监控</td>
         <td>
             <img src="img/9.png"/>
             <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录像列表</div>
         </td>
-        <td>
-            <img src="img/10.png"/>
-            <div class="caption">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录像列表</div>
-        </td>
-
     </tr>
-</table>
-
-
-<table>
     <tr>
         <td>告警事件</td>
         <td>
